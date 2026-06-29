@@ -3,8 +3,12 @@ package main
 import (
 	"log"
 	"os"
-
+	"spotsync-api/config"
 	"spotsync-api/handler"
+	"spotsync-api/models"
+	"spotsync-api/repository"
+	"spotsync-api/service"
+	"spotsync-api/utils"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
