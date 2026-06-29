@@ -1,0 +1,16 @@
+# Local environment variables
+.env
+.env.local
+
+# Binary compiled files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+
+# IDE files
+.idea/
+.vscode/
