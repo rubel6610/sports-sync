@@ -46,6 +46,10 @@ func main() {
 	authHandler := handler.NewAuthHandler(authService)
 	zoneHandler := handler.NewZoneHandler(zoneService)
 	resHandler := handler.NewReservationHandler(resService)
+	homeHandler := handler.NewHomeHandler()
+
+	// Home Route
+	e.GET("/", homeHandler.Home)
 
 	// API Routing Setup (Matching Blueprint Spec Exactly)
 	v1 := e.Group("/api/v1")
