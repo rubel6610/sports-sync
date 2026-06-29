@@ -3,7 +3,6 @@ package repository
 import (
 	"errors"
 	"spotsync-api/models"
-
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
